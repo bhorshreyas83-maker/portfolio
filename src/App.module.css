@@ -1,0 +1,95 @@
+.appWrapper {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease;
+}
+
+/* Mouse-following spotlight overlay */
+.mouseSpotlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
+    rgba(139, 92, 246, 0.08) 0%,
+    rgba(59, 130, 246, 0.04) 50%,
+    transparent 80%
+  );
+  transition: opacity 0.5s ease;
+}
+
+:global([data-theme="light"]) .mouseSpotlight {
+  background: radial-gradient(
+    400px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
+    rgba(59, 130, 246, 0.04) 0%,
+    transparent 80%
+  );
+}
+
+/* Dynamic Ambient Glow Orbs */
+.glowOrb {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.12;
+  z-index: 0;
+  pointer-events: none;
+  animation: floatOrb 25s infinite alternate ease-in-out;
+}
+
+.glowOrb1 {
+  background: var(--accent-purple);
+  top: 10%;
+  left: -15%;
+}
+
+.glowOrb2 {
+  background: var(--accent-blue);
+  bottom: 15%;
+  right: -15%;
+  animation-delay: -6s;
+}
+
+.glowOrb3 {
+  background: var(--accent-cyan);
+  top: 45%;
+  left: 55%;
+  width: 350px;
+  height: 350px;
+  animation-delay: -12s;
+}
+
+@keyframes floatOrb {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(100px, 60px) scale(1.15);
+  }
+}
+
+/* Grid background decoration */
+.gridOverlay {
+  position: fixed;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+:global([data-theme="light"]) .gridOverlay {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.015) 1px, transparent 1px);
+}
