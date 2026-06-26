@@ -50,7 +50,7 @@ export default function About() {
               I have a strong interest in software development, web technologies, and modern IT solutions. I enjoy learning new technologies, building creative projects, and continuously improving my programming skills.
             </p>
             <p className={styles.description}>
-              My ultimate career goal is to become a successful Full-Stack Developer and contribute to innovative technology solutions that solve real-world problems. I focus on developing clean, well-documented applications with optimal responsiveness.
+              My ultimate career goal is to become a successful Full-Stack Developer, and my grand dream is to become a successful Businessman. I want to contribute to innovative technology solutions that solve real-world problems and eventually build my own tech enterprise.
             </p>
 
             {/* Stats Cards */}
@@ -80,6 +80,10 @@ export default function About() {
                 <FiTarget className={styles.cardTitleIcon} /> Career Objectives
               </h3>
               <ul className={styles.goalsList}>
+                <li>
+                  <FiCheckCircle className={styles.goalIcon} />
+                  <span>My ultimate dream is to become a successful Businessman and tech entrepreneur.</span>
+                </li>
                 <li>
                   <FiCheckCircle className={styles.goalIcon} />
                   <span>Build complete full-stack web architectures utilizing modern frameworks.</span>

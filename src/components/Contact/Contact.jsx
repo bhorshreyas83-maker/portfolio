@@ -98,8 +98,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className={styles.detailTitle}>Email Me</div>
-                  <a href="mailto:bhorshreyas83@gmail.com" className={styles.detailValue}>
-                    bhorshreyas83@gmail.com
+                  <a href={`mailto:${socialLinks.email}`} className={styles.detailValue}>
+                    {socialLinks.email}
                   </a>
                 </div>
               </div>

@@ -69,11 +69,11 @@ export default function Hero() {
             </motion.h1>
             
             <motion.div className={styles.tagline} variants={itemVariants}>
-              <TypedText strings={["BCA Student", "Aspiring Full-Stack Developer", "IT Enthusiast"]} />
+              <TypedText strings={["BCA Student", "Aspiring Full-Stack Developer", "Future Businessman", "IT Enthusiast"]} />
             </motion.div>
             
             <motion.p className={styles.intro} variants={itemVariants}>
-              I am Shreyas Suresh Bhor, a passionate BCA First Year student with a strong interest in software development, web technologies, and modern IT solutions. I enjoy learning new technologies, building creative projects, and continuously improving my programming skills. My goal is to become a successful Full-Stack Developer and contribute to innovative technology solutions.
+              I am Shreyas Suresh Bhor, a passionate BCA First Year student with a strong interest in software development, web technologies, and modern IT solutions. I enjoy learning new technologies, building creative projects, and continuously improving my programming skills. My goal is to become a successful Full-Stack Developer, and my ultimate dream is to become a successful Businessman, creating innovative technology solutions that shape the future.
             </motion.p>
             
             <motion.div className={styles.ctaButtons} variants={itemVariants}>

@@ -79,27 +79,7 @@ export default function Projects() {
                 <h3 className={styles.projectTitle}>{project.title}</h3>
                 <p className={styles.projectDesc}>{project.description}</p>
 
-                {/* External Actions */}
-                <div className={styles.actions}>
-                  <a 
-                    href={project.github} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className={styles.linkBtn}
-                    aria-label={`View GitHub source code for ${project.title}`}
-                  >
-                    <FiGithub className={styles.linkBtnIcon} /> Code
-                  </a>
-                  <a 
-                    href={project.demo} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className={styles.linkBtn}
-                    aria-label={`Visit live demo for ${project.title}`}
-                  >
-                    <FiExternalLink className={styles.linkBtnIcon} /> Live Demo
-                  </a>
-                </div>
+                {/* Removed External Actions */}
               </div>
             </motion.div>
           ))}
