@@ -1,0 +1,14 @@
+.canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1; /* Behind content but in front of body background */
+  pointer-events: none; /* Let clicks pass through to standard links */
+  opacity: 0.6;
+}
+
+[data-theme="light"] .canvas {
+  opacity: 0.3;
+}

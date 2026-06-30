@@ -1,0 +1,150 @@
+.achievementsSection {
+  position: relative;
+  z-index: 2;
+}
+
+.titleWrapper {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Card details */
+.card {
+  padding: 36px;
+  text-align: left;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-heading);
+}
+
+.titleIcon {
+  color: var(--accent-cyan);
+  font-size: 1.6rem;
+}
+
+/* Items List */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.bullet {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(6, 182, 212, 0.08);
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+  border: 1px solid rgba(6, 182, 212, 0.15);
+}
+
+.itemContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemHeading {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  font-family: var(--font-heading);
+}
+
+.itemDesc {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+/* Goals Grid */
+.goalsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.goalCard {
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.01);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: var(--transition-bounce);
+}
+
+[data-theme="light"] .goalCard {
+  background: rgba(0, 0, 0, 0.01);
+}
+
+.goalCard:hover {
+  border-color: var(--accent-purple);
+  transform: translateX(4px);
+  box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+.goalIcon {
+  color: var(--accent-purple);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.goalText {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+@media (max-width: 992px) {
+  .achievementsGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 24px;
+  }
+}
