@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaWhatsapp, FaInstagram, FaTelegramPlane, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { socialLinks, getWhatsAppLink } from '../../data/socialLinks';
 import styles from './Footer.module.css';
 
@@ -11,12 +11,6 @@ export default function Footer() {
         <div className={styles.socials}>
           <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className={styles.socialLink}>
             <FaWhatsapp />
-          </a>
-          <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className={styles.socialLink}>
-            <FaInstagram />
-          </a>
-          <a href={socialLinks.telegram} target="_blank" rel="noopener noreferrer" aria-label="Telegram" className={styles.socialLink}>
-            <FaTelegramPlane />
           </a>
           <a href={socialLinks.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={styles.socialLink}>
             <FaGithub />

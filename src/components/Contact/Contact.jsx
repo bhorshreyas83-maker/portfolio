@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMail, FiPhone, FiMapPin, FiSend } from 'react-icons/fi';
-import { FaWhatsapp, FaInstagram, FaTelegramPlane, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaWhatsapp, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { socialLinks, getWhatsAppLink } from '../../data/socialLinks';
 import styles from './Contact.module.css';
 
@@ -133,9 +133,6 @@ export default function Contact() {
               <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%' }}>
                 <FaWhatsapp /> WhatsApp Chat
               </a>
-              <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="btn btn-secondary" style={{ width: '100%' }}>
-                <FaInstagram /> Instagram
-              </a>
             </div>
 
             {/* Social Links Row */}
@@ -151,28 +148,6 @@ export default function Contact() {
                     aria-label="Chat on WhatsApp"
                   >
                     <FaWhatsapp />
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href={socialLinks.instagram} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className={`${styles.socialBtn} ${styles.instagramBtn}`}
-                    aria-label="Follow on Instagram"
-                  >
-                    <FaInstagram />
-                  </a>
-                </li>
-                <li>
-                  <a 
-                    href={socialLinks.telegram} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className={`${styles.socialBtn} ${styles.telegramBtn}`}
-                    aria-label="Send message on Telegram"
-                  >
-                    <FaTelegramPlane />
                   </a>
                 </li>
                 <li>

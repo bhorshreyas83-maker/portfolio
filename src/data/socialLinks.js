@@ -5,8 +5,6 @@ export const socialLinks = {
   },
   email: 'bhorshreyas83@gmail.com',
   location: 'Sangamner, Maharashtra, India',
-  instagram: 'https://instagram.com/your_username',
-  telegram: 'https://t.me/shreyasbhor',
   github: 'https://github.com/shreyasbhor',
   linkedin: 'https://www.linkedin.com/in/shreyas-bhor-61354a379'
 };
